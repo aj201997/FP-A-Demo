@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {makeSeed,ACCOUNTS,DEPTS,MONTHS,annual,total,depTotal} from '../src/data.js';
+const data=makeSeed();
+const catalog=JSON.parse(fs.readFileSync(new URL('../src/catalogue.json',import.meta.url),'utf8'));
+assert.equal(catalog.length,83,'Source catalogue must contain 83 rows');
+assert.equal(new Set(catalog.map(r=>r.id)).size,83,'Requirement IDs must be unique');
+assert.equal(MONTHS.length,12,'Monthly period count');
+assert.equal(new Set(ACCOUNTS.map(a=>a.id)).size,ACCOUNTS.length,'Planning account IDs must be unique');
+assert.equal(new Set(DEPTS.map(d=>d.id)).size,DEPTS.length,'Department IDs must be unique');
+assert.ok(ACCOUNTS.every(a=>data.budgets[a.id].length===12),'Each account must have 12 months');
+assert.ok(ACCOUNTS.every(a=>data.actuals[a.id].slice(9).every(v=>v===null)),'Historical actuals stop in September');
+assert.ok(total(data.budgets,'revenue')>total(data.budgets,'expense'),'Example profit proxy positive');
+assert.ok(DEPTS.every(d=>depTotal(data.budgets,d.id)>=0));
+assert.ok(data.versions.some(v=>v.status==='Published'));
+assert.ok(catalog.every(r=>['P0','P1','P2'].includes(r.phase)));
+console.log('PASS · 83 feature rows, 12 planning months, unique accounts/departments, plan totals and version model');

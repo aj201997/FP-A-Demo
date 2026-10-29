@@ -1,0 +1,749 @@
+[
+  {
+    "id": "R001",
+    "capability": "Master Data & Configuration",
+    "subcapability": "Legal Entities & Planning Units",
+    "feature": "Define legal entities, business units, cost centers, profit centers, and planning units for structured planning.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S02,S38"
+  },
+  {
+    "id": "R002",
+    "capability": "Master Data & Configuration",
+    "subcapability": "Chart of Accounts & Planning Accounts",
+    "feature": "Configure planning chart of accounts including revenue, cost, and balance sheet accounts.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S02,S06,S10,S38"
+  },
+  {
+    "id": "R003",
+    "capability": "Master Data & Configuration",
+    "subcapability": "Dimensions & Hierarchies",
+    "feature": "Define planning dimensions (entity, product, customer, geography, channel, project) with alternate hierarchies.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S02,S06,S38"
+  },
+  {
+    "id": "R004",
+    "capability": "Master Data & Configuration",
+    "subcapability": "Custom / Extension Dimensions",
+    "feature": "Add user-defined dimensions (program, initiative, campaign) for granular planning views.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S22,S25"
+  },
+  {
+    "id": "R005",
+    "capability": "Master Data & Configuration",
+    "subcapability": "Planning Versions & Scenarios",
+    "feature": "Configure multiple versions (Actual, Budget, Forecast, What-If) and scenario labels.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S03,S04,S15,S17,S28,S29,S30"
+  },
+  {
+    "id": "R006",
+    "capability": "Master Data & Configuration",
+    "subcapability": "Planning Time Horizons & Frequency",
+    "feature": "Configure short-term, mid-term, and long-term horizons with daily/weekly/monthly/quarterly frequency.",
+    "phase": "P0",
+    "scope": "MVP monthly budget cycle; daily/weekly/quarterly frequency deferred",
+    "linked": "S01,S10,S37"
+  },
+  {
+    "id": "R007",
+    "capability": "Master Data & Configuration",
+    "subcapability": "Currencies & FX Rates",
+    "feature": "Configure planning, functional, and reporting currencies with plan FX rates.",
+    "phase": "P0",
+    "scope": "MVP single currency per budget and currency fields; advanced translation deferred",
+    "linked": "S38"
+  },
+  {
+    "id": "R008",
+    "capability": "Master Data & Configuration",
+    "subcapability": "Planning Calendar & Workflow",
+    "feature": "Configure planning calendar with milestones, gates, and stakeholder responsibilities.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S08,S31,S33,S36,S37"
+  },
+  {
+    "id": "R009",
+    "capability": "Master Data & Configuration",
+    "subcapability": "Security & Data Access",
+    "feature": "Role-based access by entity, dimension, form, and version with segregation of duties.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S08,S24,S31,S32,S33,S36"
+  },
+  {
+    "id": "R010",
+    "capability": "Data Integration & Sourcing",
+    "subcapability": "Actuals from GL / Universal Journal",
+    "feature": "Real-time ingestion of actuals from GL for variance analysis at plan-account level.",
+    "phase": "P1",
+    "scope": "MVP source-controlled upload and mapping; realtime GL integration deferred",
+    "linked": "S39"
+  },
+  {
+    "id": "R011",
+    "capability": "Data Integration & Sourcing",
+    "subcapability": "Sub-Ledger Actuals",
+    "feature": "Ingest actuals from AR, AP, FA, HCM, and other sub-ledgers for granular analysis.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R012",
+    "capability": "Data Integration & Sourcing",
+    "subcapability": "Operational Data Ingestion",
+    "feature": "Ingest operational drivers (volumes, headcount, prices, mix) from SD, MM, PP, HR.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R013",
+    "capability": "Data Integration & Sourcing",
+    "subcapability": "Manual Data Entry & Uploads",
+    "feature": "Support Excel/CSV uploads and manual entry via web forms for supplementary data.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S11,S38,S39"
+  },
+  {
+    "id": "R014",
+    "capability": "Budgeting",
+    "subcapability": "Annual Operating Budget",
+    "feature": "Prepare annual operating budget for revenue, cost, and capital expenditure with top-down and bottom-up methods.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S05,S09,S10,S11,S36,S37"
+  },
+  {
+    "id": "R015",
+    "capability": "Budgeting",
+    "subcapability": "Top-Down Budgeting",
+    "feature": "Cascade high-level targets from executive management to departments with allocation logic.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S05,S06,S07"
+  },
+  {
+    "id": "R016",
+    "capability": "Budgeting",
+    "subcapability": "Bottom-Up Budgeting",
+    "feature": "Aggregate detailed departmental budgets into a consolidated group budget.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S07,S09,S11,S41"
+  },
+  {
+    "id": "R017",
+    "capability": "Budgeting",
+    "subcapability": "Zero-Based Budgeting (ZBB)",
+    "feature": "Support zero-based budgeting with cost justification from a zero base each cycle.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S12,S13,S14"
+  },
+  {
+    "id": "R018",
+    "capability": "Budgeting",
+    "subcapability": "Activity-Based Budgeting (ABB)",
+    "feature": "Plan costs based on activities and drivers (ABC-linked) for accurate cost planning.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R019",
+    "capability": "Budgeting",
+    "subcapability": "Driver-Based Budgeting",
+    "feature": "Plan revenue and cost using operational drivers (volume, price, mix, DSO, DPO).",
+    "phase": "P0",
+    "scope": "MVP basic financial drivers; full driver engine later",
+    "linked": "S03,S13"
+  },
+  {
+    "id": "R020",
+    "capability": "Budgeting",
+    "subcapability": "Capital Expenditure (CapEx) Planning",
+    "feature": "Plan CapEx projects with lifecycle costs, depreciation, and business case ROI.",
+    "phase": "P0",
+    "scope": "MVP basic CapEx lines/depreciation assumptions; full lifecycle+ROI later",
+    "linked": "S40"
+  },
+  {
+    "id": "R021",
+    "capability": "Budgeting",
+    "subcapability": "OpEx / Cost Planning",
+    "feature": "Plan operating expenses by department, cost element, and cost driver.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S09,S10,S40"
+  },
+  {
+    "id": "R022",
+    "capability": "Budgeting",
+    "subcapability": "Workforce / Headcount Planning",
+    "feature": "Plan headcount, salaries, benefits, and payroll-related costs with position-level detail.",
+    "phase": "P0",
+    "scope": "MVP headcount/payroll aggregate; position-level modelling later",
+    "linked": "S40"
+  },
+  {
+    "id": "R023",
+    "capability": "Budgeting",
+    "subcapability": "Sales & Revenue Planning",
+    "feature": "Plan sales revenue by customer, product, region, and channel with pricing simulation.",
+    "phase": "P0",
+    "scope": "MVP basic revenue plan; full customer/channel pricing simulations later",
+    "linked": "S10,S40"
+  },
+  {
+    "id": "R024",
+    "capability": "Budgeting",
+    "subcapability": "COGS & Margin Planning",
+    "feature": "Plan cost of goods sold and margin by product with material, labor, and overhead split.",
+    "phase": "P0",
+    "scope": "MVP high-level margin models; detailed material/labour allocations later",
+    "linked": "S40"
+  },
+  {
+    "id": "R025",
+    "capability": "Budgeting",
+    "subcapability": "Cash Flow Budgeting",
+    "feature": "Prepare cash flow budget aligned with P&L and BS plans.",
+    "phase": "P0",
+    "scope": "MVP scoped cash flow budget; complex treasury projections later",
+    "linked": "S42"
+  },
+  {
+    "id": "R026",
+    "capability": "Budgeting",
+    "subcapability": "Balance Sheet Planning",
+    "feature": "Plan balance sheet items (AR, AP, inventory, borrowings, equity) with roll-forward logic.",
+    "phase": "P0",
+    "scope": "MVP scoped BS roll-forwards; full ledger-specific logic later",
+    "linked": "S42"
+  },
+  {
+    "id": "R027",
+    "capability": "Forecasting",
+    "subcapability": "Rolling Forecast",
+    "feature": "Continuous rolling forecast (12/18/24 months) with monthly refresh cycles.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S15,S44"
+  },
+  {
+    "id": "R028",
+    "capability": "Forecasting",
+    "subcapability": "Quarterly / Interim Forecasts",
+    "feature": "Prepare quarterly and interim forecasts with reforecast triggers.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S15,S44"
+  },
+  {
+    "id": "R029",
+    "capability": "Forecasting",
+    "subcapability": "Latest Estimate (LE)",
+    "feature": "Maintain latest estimate combining year-to-date actuals with forward-looking projections.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S16,S44"
+  },
+  {
+    "id": "R030",
+    "capability": "Forecasting",
+    "subcapability": "Predictive / AI Forecasting",
+    "feature": "AI/ML-based predictive forecasts using historical data and external signals.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R031",
+    "capability": "Forecasting",
+    "subcapability": "Trend-Based Forecasting",
+    "feature": "Statistical forecasting using trend, seasonality, and cyclical patterns.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S44"
+  },
+  {
+    "id": "R032",
+    "capability": "Forecasting",
+    "subcapability": "Driver-Based Forecasting",
+    "feature": "Forecast based on operational and macroeconomic drivers with sensitivity to changes.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S44"
+  },
+  {
+    "id": "R033",
+    "capability": "Forecasting",
+    "subcapability": "Hybrid Forecasting Methods",
+    "feature": "Combine multiple methods (statistical + driver + manual override) for higher accuracy.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R034",
+    "capability": "Forecasting",
+    "subcapability": "Forecast Accuracy Tracking",
+    "feature": "Track forecast accuracy (MAPE, bias, hit rate) by line item, entity, and horizon.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R035",
+    "capability": "Forecasting",
+    "subcapability": "Continuous Planning",
+    "feature": "Move from periodic to continuous planning with always-on updates.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R036",
+    "capability": "Integrated Financial & Operational Planning",
+    "subcapability": "Sales & Operations Planning (S&OP)",
+    "feature": "Integrated S&OP linking demand, supply, and financial plans in a single process.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R037",
+    "capability": "Integrated Financial & Operational Planning",
+    "subcapability": "Integrated Business Planning (IBP)",
+    "feature": "Link financial plan with operational plans (production, supply chain, HR, IT).",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S22,S23"
+  },
+  {
+    "id": "R038",
+    "capability": "Integrated Financial & Operational Planning",
+    "subcapability": "HR / Workforce Planning Integration",
+    "feature": "Integrate workforce planning with financial planning for accurate people-cost projection.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R039",
+    "capability": "Integrated Financial & Operational Planning",
+    "subcapability": "Supply Chain Planning Integration",
+    "feature": "Link demand plan, supply plan, and inventory plan to financial impact.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R040",
+    "capability": "Integrated Financial & Operational Planning",
+    "subcapability": "CapEx & Project Planning Integration",
+    "feature": "Integrate capital and project plans with financial statements and cash flow.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S25,S26"
+  },
+  {
+    "id": "R041",
+    "capability": "Integrated Financial & Operational Planning",
+    "subcapability": "Marketing & Campaign Planning Integration",
+    "feature": "Integrate marketing/campaign spend and expected revenue impact into financials.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S25"
+  },
+  {
+    "id": "R042",
+    "capability": "Integrated Financial & Operational Planning",
+    "subcapability": "Cross-Functional Reconciliation",
+    "feature": "Reconcile financial and operational plans with variance identification and resolution.",
+    "phase": "P0",
+    "scope": "MVP essential reconciliations only; cross-functional planning later",
+    "linked": "S23,S26,S41"
+  },
+  {
+    "id": "R043",
+    "capability": "Scenario & What-If Analysis",
+    "subcapability": "Scenario Modeling",
+    "feature": "Model best-case, worst-case, and base-case scenarios with driver-based assumptions.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S19,S20,S45"
+  },
+  {
+    "id": "R044",
+    "capability": "Scenario & What-If Analysis",
+    "subcapability": "What-If Simulation",
+    "feature": "Run instant what-if simulations with immediate impact on P&L, BS, and cash flow.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S20,S45"
+  },
+  {
+    "id": "R045",
+    "capability": "Scenario & What-If Analysis",
+    "subcapability": "Sensitivity Analysis",
+    "feature": "Analyze sensitivity of KPIs to changes in key drivers (price, volume, FX, rates).",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S45"
+  },
+  {
+    "id": "R046",
+    "capability": "Scenario & What-If Analysis",
+    "subcapability": "Stress Testing",
+    "feature": "Stress test plans against adverse scenarios (recession, FX shock, supply disruption).",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S19,S20"
+  },
+  {
+    "id": "R047",
+    "capability": "Scenario & What-If Analysis",
+    "subcapability": "Scenario Comparison & Ranking",
+    "feature": "Compare multiple scenarios side-by-side with ranking by KPI outcomes.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S45"
+  },
+  {
+    "id": "R048",
+    "capability": "Scenario & What-If Analysis",
+    "subcapability": "Assumption Management",
+    "feature": "Central library of assumptions (rates, drivers, growth) with governance and versioning.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S03,S19,S45"
+  },
+  {
+    "id": "R049",
+    "capability": "Variance & Performance Analysis",
+    "subcapability": "Actual vs. Budget Variance",
+    "feature": "Compare actuals to budget by account, entity, cost center, and time period.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S39,S43"
+  },
+  {
+    "id": "R050",
+    "capability": "Variance & Performance Analysis",
+    "subcapability": "Actual vs. Forecast Variance",
+    "feature": "Compare actuals to latest forecast with root-cause drill-down.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S16"
+  },
+  {
+    "id": "R051",
+    "capability": "Variance & Performance Analysis",
+    "subcapability": "Budget vs. Forecast Variance",
+    "feature": "Analyze variance between original budget and latest forecast.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S15,S16,S29"
+  },
+  {
+    "id": "R052",
+    "capability": "Variance & Performance Analysis",
+    "subcapability": "Price / Volume / Mix Variance",
+    "feature": "Decompose revenue and cost variance into price, volume, and mix components.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R053",
+    "capability": "Variance & Performance Analysis",
+    "subcapability": "FX Impact Analysis",
+    "feature": "Isolate FX impact on financial results with constant-currency views.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R054",
+    "capability": "Variance & Performance Analysis",
+    "subcapability": "Root-Cause Drill-Down",
+    "feature": "Drill from summarized variances to source transactions and journal entries.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R055",
+    "capability": "Variance & Performance Analysis",
+    "subcapability": "Commentary & Explanations",
+    "feature": "Attach comments, explanations, and action items to variance items.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S34,S35,S43"
+  },
+  {
+    "id": "R056",
+    "capability": "Variance & Performance Analysis",
+    "subcapability": "Trend & Rolling Variance Analysis",
+    "feature": "Analyze variance trends over rolling periods to identify systemic issues.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R057",
+    "capability": "Allocations & Modeling",
+    "subcapability": "Cost Allocations",
+    "feature": "Model and allocate shared costs (IT, HR, corporate) across business units using drivers.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R058",
+    "capability": "Allocations & Modeling",
+    "subcapability": "Revenue Allocations",
+    "feature": "Allocate revenue and margins across products, customers, or channels.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R059",
+    "capability": "Allocations & Modeling",
+    "subcapability": "Driver-Based Allocations",
+    "feature": "Configurable driver-based allocation rules with traceability.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S07"
+  },
+  {
+    "id": "R060",
+    "capability": "Allocations & Modeling",
+    "subcapability": "Multi-Step Waterfall Allocations",
+    "feature": "Multi-step cascading allocations from cost pool to activities to receivers.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S14"
+  },
+  {
+    "id": "R061",
+    "capability": "Allocations & Modeling",
+    "subcapability": "Transfer Pricing Modeling",
+    "feature": "Model internal transfer prices for operational transfer pricing purposes.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R062",
+    "capability": "Allocations & Modeling",
+    "subcapability": "Financial Modeling Layer",
+    "feature": "Custom financial modeling layer for complex, non-standard calculations.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R063",
+    "capability": "KPIs & Performance Management",
+    "subcapability": "Financial KPIs (Revenue, EBITDA, ROI, Cash)",
+    "feature": "Configurable financial KPIs including revenue growth, margins, EBITDA, ROI, cash flow.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S01,S04,S22,S25,S26"
+  },
+  {
+    "id": "R064",
+    "capability": "KPIs & Performance Management",
+    "subcapability": "Operational KPIs",
+    "feature": "Operational KPIs (volume, utilization, DSO, DPO, DIO, headcount productivity).",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R065",
+    "capability": "KPIs & Performance Management",
+    "subcapability": "Strategic KPIs & Balanced Scorecard",
+    "feature": "Balanced scorecard KPIs across financial, customer, process, and learning perspectives.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S01,S13"
+  },
+  {
+    "id": "R066",
+    "capability": "KPIs & Performance Management",
+    "subcapability": "Target Setting & Cascading",
+    "feature": "Set strategic targets and cascade to operational KPIs across the organization.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S05,S06,S07"
+  },
+  {
+    "id": "R067",
+    "capability": "KPIs & Performance Management",
+    "subcapability": "KPI Trends & Benchmarking",
+    "feature": "Track KPI trends and benchmark against internal and industry standards.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S04,S26"
+  },
+  {
+    "id": "R068",
+    "capability": "KPIs & Performance Management",
+    "subcapability": "Alerts & Threshold Monitoring",
+    "feature": "Configurable alerts on KPI threshold breaches with escalation workflows.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R069",
+    "capability": "Workflow & Collaboration",
+    "subcapability": "Planning Governance Framework",
+    "feature": "Configure multi-level workflows for plan submission, review, approval, task tracking, ownership, due dates, dependencies, notifications, reminders, and escalations. Support collaborative planning through comments, annotations, concurrent updates, version locking, access control, and audit trail for approved plans.",
+    "phase": "P0",
+    "scope": "MVP configurable submission and approval; concurrent real-time editing and advanced escalations later",
+    "linked": "S08,S09,S11,S12,S14,S17,S18,S21,S27,S28,S31,S32,S33,S34,S35,S36,S37"
+  },
+  {
+    "id": "R070",
+    "capability": "Reporting & Analytics",
+    "subcapability": "Standard Financial Statements",
+    "feature": "Auto-generate planned P&L, Balance Sheet, and Cash Flow with drill-down.",
+    "phase": "P0",
+    "scope": "MVP scoped planned P&L, BS and CF; complete drill-down/report engine later",
+    "linked": "S01,S20,S23,S42"
+  },
+  {
+    "id": "R071",
+    "capability": "Reporting & Analytics",
+    "subcapability": "Variance Reports",
+    "feature": "Standard variance reports (Actual vs Budget, Actual vs Forecast) with dimensions and filters.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S16,S29,S43"
+  },
+  {
+    "id": "R072",
+    "capability": "Reporting & Analytics",
+    "subcapability": "Executive Dashboards",
+    "feature": "Executive-level dashboards with financial KPIs, trends, and drill-down.",
+    "phase": "P0",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R073",
+    "capability": "Reporting & Analytics",
+    "subcapability": "Management Reports & Report Books",
+    "feature": "Curated report books for management review meetings and board packs.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R074",
+    "capability": "Reporting & Analytics",
+    "subcapability": "Ad-Hoc & Multi-Dimensional Analytics",
+    "feature": "Multi-dimensional slice-and-dice with drill-through to source transactions.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "S02"
+  },
+  {
+    "id": "R075",
+    "capability": "Reporting & Analytics",
+    "subcapability": "Real-Time Reporting",
+    "feature": "Real-time reporting on actuals, plan, and forecast with instant refresh.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R076",
+    "capability": "AI & Advanced Analytics",
+    "subcapability": "Intelligent Analytics Framework",
+    "feature": "Leverage AI and machine learning to generate planning insights, forecasts, anomaly detection, forecast bias analysis, and optimization recommendations. Support conversational planning, what-if analysis, narrative generation, and automatic selection of the most suitable forecasting model for each planning line item.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R077",
+    "capability": "Integration Points",
+    "subcapability": "Enterprise Integration Ecosystem",
+    "feature": "Integrated enterprise planning connectivity with real-time GL actuals, plan-derived postings, and seamless integration across CO, HR, sales, supply chain, projects, treasury, tax, and group reporting for consolidated planning and disclosures.",
+    "phase": "P2",
+    "scope": "Future enterprise integration ecosystem; MVP interface/readiness only",
+    "linked": "S39"
+  },
+  {
+    "id": "R078",
+    "capability": "Audit Trail & Controls",
+    "subcapability": "Full Change History",
+    "feature": "Planning governance, auditability, and version control with complete audit trails, workflow tracking, source-to-plan traceability, approval and submission history, immutable version management, and impact analysis of assumption and driver changes.",
+    "phase": "P0",
+    "scope": "MVP authoritative change events and immutable published versions; extended impact analytics later",
+    "linked": "S04,S08,S15,S17,S18,S21,S24,S27,S28,S29,S30,S32,S34,S35"
+  },
+  {
+    "id": "R079",
+    "capability": "Additional Attributes",
+    "subcapability": "Multi-Entity / Multi-Country Support and FX translation",
+    "feature": "Multi-entity and multi-currency planning with consolidated planning across entities, countries, and time zones, including local, group, and reporting currency views with automated FX translation.",
+    "phase": "P1",
+    "scope": "MVP entity-level aggregation; full multi-currency, countries and FX translation later",
+    "linked": "S41"
+  },
+  {
+    "id": "R080",
+    "capability": "Additional Attributes",
+    "subcapability": "Multi-GAAP / Parallel Ledgers",
+    "feature": "Support plans under IFRS, local GAAP, and management views from a single data source.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R081",
+    "capability": "Additional Attributes",
+    "subcapability": "Multi-Language & Localization",
+    "feature": "Multi-language UI and localized formats for global rollouts.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R082",
+    "capability": "Additional Attributes",
+    "subcapability": "Scalability for High-Volume Data",
+    "feature": "In-memory processing to handle high-volume planning data with real-time calculations.",
+    "phase": "P2",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  },
+  {
+    "id": "R083",
+    "capability": "Additional Attributes",
+    "subcapability": "Self-Service for Business Users",
+    "feature": "Business-user-friendly configuration, form design, and calculation authoring without heavy IT dependency.",
+    "phase": "P1",
+    "scope": "Implement the stated capability in the wave shown, subject to acceptance criteria",
+    "linked": "No direct mapped row"
+  }
+]
